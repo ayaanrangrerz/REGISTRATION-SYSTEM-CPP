@@ -1,18 +1,22 @@
 # Login and Registration System (C++)
 
-## Description
-A console-based login and registration system developed in C++ using file handling.
+A small console program demonstrating registration, login checks, and basic file handling.
 
 ## Features
-- User Registration
-- Duplicate Username Validation
-- User Login Authentication
-- File Storage using users.txt
-- Success and Error Messages
+- Register a username
+- Reject a username already present in the records
+- Check a username and password during login
+- Store records in `users.txt`
 
-## Technologies Used
-- C++
-- File Handling
+## Build and run
+Requires a C++ compiler with C++11 support.
 
-## Author
-Ayaan Ali
+```bash
+g++ -std=c++11 registration-system.cpp -o registration-system
+./registration-system
+```
+
+On Windows, run `registration-system.exe` after compiling.
+
+## Security note
+This is a classroom demonstration. It writes passwords as plain text to `users.txt`; do not use it for real accounts or sensitive credentials.
